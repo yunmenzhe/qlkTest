@@ -119,7 +119,8 @@ public class ExcelUtil {
 			ExcelWSheet = ExcelWBook.getSheet(sheetName);
 
 			/*
-			 * 从包含指定测试用例序号的第一行开始逐行遍历，知道某一行不出现指定测试用例序号， 此时的遍历次数就是此测试用例步骤的个数
+			 * 从包含指定测试用例序号的第一行开始逐行遍历，知道某一行不出现指定测试用例序号，
+			 * 此时的遍历次数就是此测试用例步骤的个数
 			 */
 			for (int i = testCaseStartRowNumber; i <= ExcelUtil
 					.getRowCount(sheetName) - 1; i++) {
